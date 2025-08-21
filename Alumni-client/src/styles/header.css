@@ -1,0 +1,52 @@
+/* Header background color */
+.header {
+    background-color: #2c3e50; /* Dark blue-gray background, same as sidebar */
+    color: #ecf0f1; /* Light text color for better contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    height: 60px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Logo styling */
+.header .logo {
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    color: #ecf0f1; /* Light text color */
+}
+.header .logo span {
+    color: #ffffff; /* White color for the "Dashboard" text */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+}
+.header .nav-profile .dropdown-toggle {
+    color: #ffffff; /* White color for the admin's name */
+    font-weight: bold; /* Make it bold */
+}
+/* Dropdown menu styling */
+.header .dropdown-menu {
+    background-color: #fff; /* Slightly darker shade for dropdown */
+    color: #ecf0f1; /* Light text color */
+    border: none; /* Remove border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown */
+}
+
+/* Dropdown menu hover effect */
+.header .dropdown-menu .dropdown-item:hover {
+    background-color: #1abc9c; /* Teal hover effect */
+    color: #fff; /* White text on hover */
+}
+
+/* Toggle sidebar button styling */
+.header .toggle-sidebar-btn {
+    color: #ecf0f1; /* Light text color */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header .toggle-sidebar-btn:hover {
+    color: #1abc9c; /* Teal hover effect */
+}

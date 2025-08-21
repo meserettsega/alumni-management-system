@@ -1,0 +1,44 @@
+.alumni-header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+}
+
+.alumni-search {
+    border-radius: 10px;
+}
+
+.alumni-search-icon {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.alumni-search-input {
+    border-radius: 0 5px 5px 0;
+}
+
+.alumni-card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.alumni-img {
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.alumni-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.alumni-show-more-btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.alumni-show-more-btn:hover {
+    background-color: #0056b3;
+}

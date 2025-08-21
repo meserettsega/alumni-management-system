@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+/* Main Content Section */
+.main-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/uploads/amu pic.jpg'); /* Overlay color and background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+ /* Rounded corners for a polished look */
+    padding: 2rem; /* Add padding for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    color: white; /* Ensure text is visible on the dark background */
+    max-width: 100%; /* Ensures the section spans the full width */
+   /* Centers the section horizontally */
+   margin-top: -40px;
+ 
+}
+
+
+
+/* .masthead h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 0.3rem; 
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.masthead p {
+    font-size: 0.9rem; 
+    animation: fadeIn 2s ease-in-out;
+} */
+
+/* Donation Form */
+.donation-forme {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 6px; /* Slightly reduced border radius */
+    padding: 1rem; /* Reduced padding */
+    box-shadow: 0 10px 15px rgba(26, 25, 25, 0.952); /* Added shadow effect */
+    animation: slideIn 1s ease-in-out;
+    max-width: 600px; /* Set a max width for compactness */
+    margin: 0 auto; /* Center the form */
+}
+
+.donation-forme h2 {
+    font-size: 1.5rem; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 0.8rem; /* Reduced margin */
+    text-align: center;
+    color: #007bff;
+}
+
+.forme-group {
+    margin-bottom: 0.8rem; /* Reduced margin */
+}
+
+.forme-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.2rem; /* Reduced margin */
+    display: block;
+}
+
+.forme-control {
+    width: 100%;
+    padding: 0.5rem; /* Reduced padding */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Slightly reduced border radius */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forme-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* Reduced shadow */
+    outline: none;
+}
+
+/* Submit Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem; /* Reduced padding */
+    font-size: 0.85rem; /* Reduced font size */
+    font-weight: bold;
+    color: white;
+    border-radius: 4px; /* Slightly reduced border radius */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Thank You Message */
+.thank-you-message {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 1rem; /* Reduced padding */
+    border-radius: 6px; /* Slightly reduced border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+    animation: fadeIn 1.5s ease-in-out;
+    max-width: 600px; /* Set a max width for compactness */
+    margin: 0 auto; /* Center the message */
+}
+
+.thank-you-message h2 {
+    font-size: 1.8rem; /* Reduced font size */
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 0.6rem; /* Reduced margin */
+}
+
+.thank-you-message p {
+    font-size: 0.9rem; /* Reduced font size */
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Reduced translation */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Reduced translation */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

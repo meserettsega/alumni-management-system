@@ -1,0 +1,76 @@
+/* General Styling */
+body {
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    font-family: 'Roboto', sans-serif;
+}
+
+.masthead {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+}
+
+.page-title h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.divider {
+    border-top: 2px solid #fff;
+    width: 50%;
+    margin: 0 auto;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    animation: scaleIn 1s ease-in-out;
+}
+
+/* .card-body {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+/* Button Styling */
+.btn-animated {
+    background: #2575fc;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-animated:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

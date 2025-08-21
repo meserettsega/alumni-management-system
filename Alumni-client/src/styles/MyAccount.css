@@ -1,0 +1,106 @@
+/* Header Section */
+.myaccount-header {
+    position: relative; /* Allows positioning of text over the image */
+    background-image: url('../assets/uploads/headebg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Keep the text color white for contrast */
+    text-align: center; /* Centers the text horizontally */
+    padding: 5rem 1rem; /* Adds spacing for the header */
+    overflow: hidden; /* Ensures no overflow from child elements */
+}
+
+/* Overlay Effect for Hover */
+.myaccount-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+    z-index: 1; /* Ensures the overlay is below the text */
+}
+
+.myaccount-header:hover::before {
+    background: rgba(0, 0, 0, 0.7); /* Darkens the overlay on hover */
+}
+
+/* Text Styling Over the Image */
+.myaccount-header h1,
+.myaccount-header p {
+    position: relative; /* Ensures text is above the overlay */
+    z-index: 2; /* Places the text above the overlay */
+    margin: 0;
+}
+
+.myaccount-header h1 {
+    font-size: 3rem; /* Larger font size for the title */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+    margin-top: 34px;
+}
+
+.myaccount-header p {
+    font-size: 1.25rem; /* Slightly smaller font size for the subtitle */
+    margin-top: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+}
+
+/* Form Section */
+.myaccount-form {
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Adds rounded corners */
+    padding: 2rem; /* Adds spacing inside the form */
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for a professional look */
+}
+
+/* Label Styling */
+.myaccount-label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input, Select, and Textarea Styling */
+.myaccount-input,
+.myaccount-select,
+.myaccount-textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.5rem; /* Adds padding for better usability */
+    font-size: 1rem; /* Ensures consistent font size */
+}
+
+/* Button Styling */
+.myaccount-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem; /* Adds padding for a larger button */
+    font-size: 1rem; /* Ensures consistent font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adds smooth transitions */
+}
+
+.myaccount-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .myaccount-header h1 {
+        font-size: 2.5rem; /* Adjusts font size for smaller screens */
+    }
+
+    .myaccount-header p {
+        font-size: 1rem; /* Adjusts font size for smaller screens */
+    }
+
+    .myaccount-form {
+        padding: 1.5rem; /* Reduces padding for smaller screens */
+    }
+}

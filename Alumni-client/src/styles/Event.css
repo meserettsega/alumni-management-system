@@ -1,0 +1,35 @@
+.container-fluid {
+    padding: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-new {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-new:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
