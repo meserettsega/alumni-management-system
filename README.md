@@ -27,7 +27,7 @@ The **Alumni Management System** is a web-based platform for **Arba Minch Univer
   ![Admin Homepage](./screenshots/Admin-homepage.PNG)
 
 - **All Users List (Admin Panel)**  
-  ![All Users List](./screenshots/all-uuser-list-on-adminpage.PNG)
+  ![All Users List](./screenshots/all-uuser-list-on-admin.PNG)
 
 - **Alumni List on Admin Page**  
   ![Alumni List](./screenshots/Alumni-list-on-adminpage.PNG)
