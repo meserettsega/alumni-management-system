@@ -1,75 +1,60 @@
-2. Install Dependencies
-Client
-cd Alumni-client
-npm install
+# Alumni Management System for Arba Minch University CS
 
-Server
-cd ../Alumni-server
-npm install
+The **Alumni Management System** is a web-based platform for **Arba Minch University** that connects alumni with the university. It enables **registration, job postings, events, forums, donations, and messaging**, fostering networking, professional growth, and lifelong engagement.
 
-3. Configure Environment Variables
+---
 
-Create a .env file in Alumni-server with the following:
+## Features
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=alumni_db
-PORT=5000
-JWT_SECRET=your_jwt_secret
+- Alumni registration and profile management  
+- Admin verification of alumni accounts  
+- Faculty officer registration and management  
+- Search and filter alumni by name, department, or batch  
+- Job and career posting  
+- Events and forums management  
+- Donations to support faculty  
+- Messaging between alumni and faculty officers  
+- Admin dashboard for user and content management  
 
-4. Run the Application
-Start the Server
-cd Alumni-server
-node index.js
+---
 
-Start the Client
+## Screenshots  
 
-Open a new terminal:
+- **Homepage**  
+  ![Homepage](./screenshots/homepage.PNG)
 
-cd Alumni-client
-npm run dev
+- **Admin Homepage**  
+  ![Admin Homepage](./screenshots/Admin-homepage.PNG)
 
+- **All Users List (Admin Panel)**  
+  ![All Users List](./screenshots/all-user-list-admin.PNG)
 
-Client runs at: http://localhost:5173
+- **Alumni List on Admin Page**  
+  ![Alumni List](./screenshots/alumni-list-admin.PNG)
 
-Server runs at: http://localhost:5000
+- **Alumni List**  
+  ![Alumni List](./screenshots/alumni-list.PNG)
 
-Usage
+- **Job List**  
+  ![Job List](./screenshots/job-list.PNG)
 
-Alumni register (require admin verification before login)
+- **Messaging**  
+  ![Messaging](./screenshots/message.PNG)
 
-Faculty officers register directly
+---
 
-Admin verifies alumni accounts
+## Getting Started  
 
-Post/manage jobs, events, forums, and donations
+### Prerequisites
 
-Alumni and faculty officers can chat via the messaging system
+- [Node.js](https://nodejs.org/) (v14 or higher)  
+- [npm](https://www.npmjs.com/)  
+- [MySQL](https://www.mysql.com/) (for database)  
 
-Contributing
+---
 
-Fork the repository
+### 1. Clone the Repository  
 
-Create your feature branch (git checkout -b feature/YourFeature)
-
-Commit your changes (git commit -m 'Add new feature')
-
-Push to the branch (git push origin feature/YourFeature)
-
-Open a Pull Request
-
-License
-
-This project is licensed under the MIT License.
-
-Contact
-
-GitHub: meserettsega
-
-Telegram (for full SRS Document): @meseret_tsega
-
-
-✅ Now your README will **display all the screenshots** from your `screenshots/` folder correctly on GitHub.  
-
-Do you want me to also **rename your screenshot files** (remove spaces and uppercase letters) to avoid possible GitHub path issues?
+```sh
+git clone https://github.com/meserettsega/alumni-management-system.git
+cd alumni-management-system
