@@ -1,132 +1,75 @@
-# alumni-management-system
-The Alumni Management System is a web-based platform for Arba Minch University that connects alumni with the university. It enables registration, job postings, events, forums, donations, and messaging, fostering networking, professional growth, and lifelong engagement.
- # Alumni Management System for Arba Minch University CS
-
-A web-based platform for managing alumni information, job postings, and networking for the Computer Science department at Arba Minch University.
-
----
-
-## Features
-
-- Alumni registration and profile management
-- Search and filter alumni by name, department, or batch
-- Job/career posting and management
-- Admin dashboard for managing users and content
-
----
-
-## Demo
-
-<!-- Uncomment and update the link below when your demo is ready -->
-<!-- [Live Demo](https://your-demo-link.com) -->
-
----
-
-## Screenshots
-
-<!-- Add screenshots or GIFs here -->
-<!-- ![Screenshot](./screenshots/homepage.png) -->
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- [MongoDB](https://www.mongodb.com/) (for backend)
-
----
-
-### 1. Clone the Repository
-
-```sh
-git clone https://github.com/meserettsega/alumni-management-system.git
-cd alumni-management-system
-```
-
----
-
-### 2. Install Dependencies
-
-#### For the Client
-
-```sh
+2. Install Dependencies
+Client
 cd Alumni-client
 npm install
-```
 
-#### For the Server
-
-```sh
+Server
 cd ../Alumni-server
 npm install
-```
 
----
+3. Configure Environment Variables
 
-### 3. Configure Environment Variables
+Create a .env file in Alumni-server with the following:
 
-- Create a `.env` file in `Alumni-server` and add your MongoDB URI and other secrets as needed.
-
-Example:
-```
-MONGO_URI=mongodb://localhost:27017/alumni_db
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=alumni_db
 PORT=5000
 JWT_SECRET=your_jwt_secret
-```
 
----
-
-### 4. Run the Application
-
-#### Start the Server
-
-```sh
+4. Run the Application
+Start the Server
 cd Alumni-server
-npm start
-```
+node index.js
 
-#### Start the Client
+Start the Client
 
-Open a new terminal, then:
+Open a new terminal:
 
-```sh
 cd Alumni-client
-npm start
-```
+npm run dev
 
-The client will usually run at [http://localhost:3000](http://localhost:3000) and the server at [http://localhost:5000](http://localhost:5000).
 
----
+Client runs at: http://localhost:5173
 
-## Usage
+Server runs at: http://localhost:5000
 
-- Register as an alumnus/alumna
-- Search for alumni by name, department, or batch
-- Post and manage job opportunities (admin)
-- Update your profile and connect with others
+Usage
 
----
+Alumni register (require admin verification before login)
 
-## Contributing
+Faculty officers register directly
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+Admin verifies alumni accounts
 
----
+Post/manage jobs, events, forums, and donations
 
-## License
+Alumni and faculty officers can chat via the messaging system
+
+Contributing
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/YourFeature)
+
+Commit your changes (git commit -m 'Add new feature')
+
+Push to the branch (git push origin feature/YourFeature)
+
+Open a Pull Request
+
+License
 
 This project is licensed under the MIT License.
 
----
+Contact
 
-## Contact
+GitHub: meserettsega
 
-For questions or support, contact [meserettsega](https://github.com/meserettsega).
-to get the document(clear SRS Document) contact me on telegram username  @meseret_tsega
+Telegram (for full SRS Document): @meseret_tsega
+
+
+✅ Now your README will **display all the screenshots** from your `screenshots/` folder correctly on GitHub.  
+
+Do you want me to also **rename your screenshot files** (remove spaces and uppercase letters) to avoid possible GitHub path issues?
