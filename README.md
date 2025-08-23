@@ -58,3 +58,9 @@ The **Alumni Management System** is a web-based platform for **Arba Minch Univer
 ```sh
 git clone https://github.com/meserettsega/alumni-management-system.git
 cd alumni-management-system
+### Contact  
+
+GitHub: meserettsega  
+
+Telegram (for full SRS Document): @meseret_tsega
+
